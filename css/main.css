@@ -19,6 +19,10 @@ header{
     align-items: center;
     justify-content: space-between;
     background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
 }
 
 header h3{
@@ -42,6 +46,12 @@ header ul li a{
     color: #fff;
 }
 
+header ul li a:hover{
+    color: #ff8303;
+    background-color: #fff;
+    padding: 10px;
+}
+
 header div{
     display: none;
 }
@@ -61,6 +71,7 @@ header div i{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5% 7%;
+    margin-top: 50px;
 }
 
 .intro div{
@@ -110,6 +121,58 @@ header div i{
 }
 
 
+/***********************************/
+/***** About  Section **************/
+/***********************************/
+.about {
+    text-align: center;
+    padding: 5% 7%;
+}
+
+.about img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.about h5{
+    font-size: 2em;
+    color: #ff8303;
+    margin: 30px;
+    font-weight: 700;
+}
+
+.about p{
+    margin-top: 20px;
+}
+
+
+/***********************************/
+/***** My Work  Section ************/
+/***********************************/
+.my-work{
+    text-align: center;
+    padding: 5% 7%;
+    background-color: #000;
+}
+
+.my-work h5{
+    color: white;
+    font-size: 3em;
+}
+
+.my-work-summary{
+    color: #fff;
+    font-size: 1em;
+    margin: 30px;
+}
+
+.my-work img{
+    width: 60%;
+}
+
+
+
 /****************************************************/
 /****************************************************/
 /******* Responsiveness For the site ****************/
@@ -148,6 +211,8 @@ header div i{
     .intro{
         width: 100%;
         height: calc(90vh - 100px);
+        padding-top: 7%;
+        margin-top: 30px;
     }
 
     .intro div{
@@ -161,6 +226,7 @@ header div i{
 
     .intro h2{
         font-size: 3em;
+        color: white;
     }
 
     .intro .typewriter-text{
@@ -170,6 +236,11 @@ header div i{
 
     .intro .typewriter-text span{
         margin-top: 20px;
+    }
+
+    /* About Section */
+    .about{
+        width: 100%; 
     }
 }
 
